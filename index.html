@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Ephraim Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fc9403;
+            background-color: ##FFFDD0;
+            background-image: url('background.png');
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .video-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid #e0d9cf;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .video-title {
+            padding: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .main-heading {
+            font-family: 'Montserrat', sans-serif;
+            color: #fc9403;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-8 md:p-12 lg:p-16">
+
+    <header class="text-center mb-12">
+        <h1 class="main-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            Live Photos of Ephraim
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            A gallery of pictures brought to life through AI, showcasing the gentle rhythm of Ephraim.
+        </p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Video Card 1 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="anderson.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="firehouse.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="anatolia.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Video Card 4 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="eagletower.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 5 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="wilsons.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 6 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="firewater.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 7 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="Sailboat.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 8 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="tourboat.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 9 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="parasail.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 10 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="kayak.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 11 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="sailboats.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 12 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="foil.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 13 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="golf.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 14 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="cherry.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<!-- Video Card 15 -->
+        <div class="video-card">
+            <video loop muted autoplay playsinline>
+                <source src="lighthouse.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </main>
+
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+        <p>Created with a little magic and a lot of heart.</p>
+    </footer>
+
+</body>
+</html>
